@@ -16,13 +16,13 @@ export function Counter()
         
         <IconButton onClick={incrementLike} aria-label="like" color="error">
         <Badge badgeContent={like} color="primary">
-        <i class='fas fa-thumbs-up' style={styles}></i>&nbsp;
+        <p style={styles}>👍</p>&nbsp;
         </Badge>
      </IconButton>
     
      <IconButton onClick={() => { setDislike(dislike + 1); }} aria-label="dislike" color="primary">
      <Badge badgeContent={dislike} color="error">
-     <i class='fas fa-thumbs-down' style={styles2}></i>&nbsp;
+     <p style={styles2}>👎</p>&nbsp;
      </Badge>
      </IconButton>
     
