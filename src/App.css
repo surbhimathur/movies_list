@@ -1,13 +1,20 @@
 body{
   font-family: 'Zen Old Mincho', serif;
 }
-
-.container{
+.main{
   display:flex;
-  gap:30px;
+  flex-wrap: wrap;
+}
+.container{
+  
   width:700px;
   margin:30px auto;
+  display:flex;
+  flex-direction:row;
+  gap:30px;
+  
 }
+
 .image_box{
   
   flex-basis:30%;
@@ -32,5 +39,32 @@ h1{
 }
 h2{
   margin-top:0;
+  display:inline-block;
 }
 
+button{
+  padding:5px;
+}
+.counter{
+  border:1px solid black;
+  margin-top:20px;
+  display:flex;
+  gap:8px;
+}
+.add_movie{
+  display:flex;
+  flex-direction: column;
+  gap:15px;
+  margin:20px auto;
+  width:900px;
+}
+.rating{
+  display:inline-block;
+  float:right;
+}
+nav{
+  display:flex;
+  gap:15px;
+  font-size:20px;
+  margin:20px;
+}
